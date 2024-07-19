@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+#main{
+    background-color: skyblue;
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 0.35;
+    padding: 0 1.5em 0 1.5em;
+
+}
+nav ul li{
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 0 2em 0 2em;
+}
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  padding: 10px 20px;
+  white-space: nowrap;
+  text-align:center;
+  letter-spacing: 0.25em;
+  height: 5em;
+  line-height: 5em;
+  text-decoration: none;
+  
+}
+ 
+nav ul li ul.dropdown a{
+    display: block;
+    margin-bottom: -50px;
+}
+nav ul li ul.dropdown{
+    width: 300px;
+    z-index: 999;
+    display: none;
+    position:absolute;
+    margin-bottom: -80px;
+    
+
+}
+nav ul li ul.dropdown li{
+    margin-bottom: 1px;
+}
+/*>set layout of dropdown<*/
+nav ul li:hover ul.dropdown{
+    display: block;
+    margin-block: -50px;
+    margin-inline-start: -55px;
+}
+nav ul li a:hover{
+    display:contents;
+
+}
+
+.arrow {
+    border: solid rgb(209, 204, 204);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+.sub{
+    background-color: aliceblue;
+}
+.sub section{
+    padding: 0 15% 0 15%;
+}
+.sub h3{
+    padding-top: 10px;
+    color:black;
+    margin: 1.5em 2em;
+    display: block;
+    font-weight:bold;
+    font-size: 24px;
+}
+.sub section img{
+    width: 200px;
+    float: left;
+    display:inline-block;
+    padding-top: 100px;
+
+}
+.sub h4{
+    font-size: 20px;
+    padding-left: 15em;
+    box-shadow: 1px 2px 3px 4px;
+    margin-left: 5em;
+}
+.sub #font{
+    font-size: 14px;
+}
+.sub .con{
+    font-size: 14px;
+    margin-left: 10em;
+}
+.sub .season{
+    box-shadow: 1px 2px 3px 4px; border-radius: 3px ; color: gray;
+}
+.sub .Maps{
+    margin-left: 200px;
+}
+.sub .code{
+    text-align: center;
+    padding: 0 5px 0 5px;
+    font-weight: bold;
+    list-style: none;
+
+}
+.sub #re{
+    box-shadow: 1px 2px 3px 4px; 
+    border-radius: 3px ;
+     color: gray;
+}
+.sub .code li{
+    display: inline-block;
+    padding: 0.5em;
+}
+#sf{
+    display: block;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    
+}
+.custom-border {
+    border: 2px solid #3498db; /* สีเข้ารหัสสีของกรอบที่คุณต้องการ */
+    padding: 10px; /* ระยะห่างภายในกรอบ */
+    border-radius: 5px; /* ขอบมนเหมือนเส้นโค้ง */
+}
+
+.info-container {
+    border: 2px solid #3498db; /* สีเข้ารหัสสีของกรอบที่คุณต้องการ */
+    padding: 20px; /* ระยะห่างภายในกรอบ */
+    border-radius: 10px; /* ขอบมนเหมือนเส้นโค้ง */
+    display: flex; /* จัดเรียงแนวนอน */
+    align-items: center; /* จัดตำแหน่งภายในกรอบ */
+}
+.info-container img {
+    width: 100px; 
+    margin-right: 20px; /
+}
+dt{
+    padding-left: 2em;
+    display: block;
+    font-weight: bold;
+    color: midnightblue;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+}
+dd{
+    display: block;
+    margin-inline-start: 40px;
+    padding-bottom: 1em;
+}
+#set{
+    margin: 4px;
+    margin-left: 200px;
+    color: #363636
+}
+#pic1{
+    float: left;
+    width: 20em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+#text{
+    margin: 5em 5em 1em 5em;
+    text-align:initial;
+    font-size: 25px;
+    
+
+}
+#pic2{
+    float: right;
+    width: 12em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    
+}
+footer{
+    clear: both;
+    background-color: skyblue;
+    min-height: 500px;
+    display: block;
+    padding-top : 20px;
+}
+/* Responsive */
+@media screen and (max-width: 720px)  {
+    #main{
+        display: block;
+        min-width:auto;
+    }
+
+    
+}
+@media screen and (max-width: 720px)  {
+    nav ul li:hover ul.dropdown{
+        min-height: 420px ;
+        margin-block: -55px;
+        
+    }
+
+    
+}
+
+@media screen and (max-width: 720px) {
+    nav ul li a:hover{
+        display:block;
+    
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+ 
+    #text{
+        margin: 2em;
+        text-align:center;
+        font-size: 25px;
+    
+    }
+    #pic2{
+        float: right;
+        width: 12em;
+        display: inline-block;
+        margin: -20px;
+        margin-bottom: 2em;
+        
+    }
+    
+}
+
+@media screen and (max-width: 720px) {
+    
+    
+    .sub h3{
+        padding-top: 50px;
+        color:black;
+        margin-block: 1.5em 1em;
+        display:block;
+        font-weight:bold;
+        font-size: 36px;
+       
+    }
+    .sub section img {
+        width: 200px;
+        float: right;
+        display: block;
+        margin-right: 2em;
+        margin-bottom: 50px;
+    }
+    .sub #t{
+        box-shadow: none;
+        display: inline;
+        margin : -212px;
+    }
+    .sub .season{
+        display: inline-block;
+        padding-block: 10px;
+        padding-inline: 10px;
+
+    }
+    .sub .con{
+        margin-left: 5em;
+    }
+    .sub .Maps {
+        text-align: inherit;
+        margin-left: -16%;
+        
+    }
+    
+}
+/* Page cs&it */
+@media screen and (max-width: 720px) {
+   #first{
+    display: inline-block;
+        padding-block: 20px;
+        padding-inline: 30px;
+        text-align: center;
+        margin: 20px;
+   }
+    
+   #sf{
+   
+
+    display: block;
+    margin: -60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 400px;
+    width: 370px;
+
+    
+
+   
+    
+}
+
+@media screen and (max-width: 720px) {
+    #set{
+        text-align: center;
+        margin-left: 40px;
+        color: #363636
+        
+    }
+    
+   
+    
+}
+@media screen and (max-width: 1024px)  {
+    footer{
+        margin-right: 1000px;
+        min-height: 400px ;
+        min-width: 800px;
+      
+    }
+
+    
+}
+
+}
